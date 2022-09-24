@@ -1,0 +1,1097 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* MOBILE VIEW (320px - 500px) */
+/* HEADER */
+header {
+    background-color: darkred;
+    padding-top: .25em;
+    margin-bottom: 1.5em;
+}
+
+h1,
+h3 {
+    font-family: "Alex Brush";
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    padding-bottom: .3em;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: "Alumni Sans";
+    font-size: 1em;
+}
+
+.hdGrid {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "nav";
+}
+
+/* NAVBAR */
+.hdList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hdGrid nav {
+    background-color: brown;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+/* BODY */
+body {
+    background-color: cornsilk;
+    background-image: url(../img/bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+/* AREA NAMES */
+.hdGrid h1 {
+    grid-area: title;
+}
+
+.hdGrid h3 {
+    grid-area: subtitle;
+}
+
+.hdGrid nav {
+    grid-area: nav;
+}
+
+#carousel {
+    grid-area: carousel;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#info {
+    grid-area: info;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#firstList {
+    grid-area: first;
+}
+
+#secondList {
+    grid-area: second;
+}
+
+#thirdList {
+    grid-area: third;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#copyright {
+    grid-area: copyright;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+/* FOOTER */
+footer {
+    background-color: darkred;
+    padding-top: .25em;
+    margin-top: 1.5em;
+}
+
+.ftLinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "first second third"
+        "logo logo copyright";
+    margin-left: .5em;
+    margin-right: .5em;
+    gap: 1em;
+}
+
+.ftLinks img {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+.ftElement {
+    color: white;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+#copyright {
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding-right: 10px;
+    align-self: center;
+}
+
+/* INDEX CONTENT */
+.content {
+    display: grid;
+    grid-template-areas:
+        "carousel"
+        "welcome"
+        "info"
+        "contact";
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+.container {
+    background-color: bisque;
+    border: 6px double #d4b692;
+    padding: .5em 1em .5em 1em;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.containerTitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Alumni Sans';
+    text-decoration: underline;
+}
+
+.containerButton {
+    font-size: 1.3em;
+    font-family: 'Alumni Sans';
+    padding: 0 .5em 0 .5em;
+    margin-top: .3em;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+}
+
+.container img {
+    width: 200px;
+}
+
+/* PRODUCTS */
+/* SEARCHBAR */
+.searchBar {
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#searchBar {
+    width: 200px;
+    font-family: 'Alumni Sans';
+    font-size: 1.3em;
+}
+
+#searchButton {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Alumni Sans';
+    padding: 0 .5em 0 .5em;
+    border-radius: 50px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255)
+}
+
+/* MAIN CONTENT */
+.filterContainer {
+    height: fit-content;
+    border: 2px solid black;
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    padding: .5em 1em .5em 1em;
+    width: 150px;
+    margin-bottom: 2em;
+}
+
+.filterList {
+    list-style-type: none;
+}
+
+.filterTitle {
+    font-size: 3em;
+    font-family: 'Alumni Sans';
+    border-bottom: 2px solid black;
+}
+
+.filterList li {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.orderTitle {
+    font-family: 'Alumni Sans';
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 1.3em;
+}
+
+.section {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.productPanel {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: bisque;
+    border: 2px solid #d4b692;
+}
+
+.product img {
+    width: 200px;
+    border: 2px solid #d4b692;
+}
+
+.product p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85em;
+    padding-top: 2px;
+}
+
+/* CONTACT */
+/* MAIN CONTENT */
+.mainContactDiv {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/* WHATSAPP */
+.wsp {
+    background-color: bisque;
+    border: 6px double #d4b692;
+    padding: .5em;
+    display: flex;
+    width: fit-content;
+    margin-bottom: 1em;
+}
+
+.wsp img {
+    width: 50px;
+    height: 50px;
+}
+
+.wsp p {
+    font-family: 'Alumni Sans';
+    font-size: 1.5em;
+}
+
+.wsp a {
+    color: black;
+    font-family: 'Alumni Sans';
+    font-size: 1.3em;
+}
+
+.wspMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* MAP */
+.map {
+    background-color: bisque;
+    border: 6px double #d4b692;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 83%;
+    margin-bottom: 1em;
+}
+
+.map p {
+    font-family: 'Alumni Sans';
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+
+
+.map img {
+    width: 200px;
+    border: 2px solid #d4b692;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form fieldset {
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    padding: .5em;
+}
+
+.form legend {
+    text-align: center;
+    font-family: 'Alumni Sans';
+    font-size: 2em;
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.form label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    display: inline;
+}
+
+.form input {
+    margin-bottom: 15px;
+}
+
+.form div {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    display: inline;
+}
+
+#requireInfo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin-bottom: 15px;
+    display: inline;
+}
+
+#TnC {
+    color: black;
+    text-decoration: underline;
+}
+
+.form button {
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Alumni Sans';
+    font-size: 1.3em;
+    padding: 0px 5px 0px 5px;
+}
+
+.asterisco {
+    color: red;
+    font-weight: 700;
+}
+
+/* INFO */
+/* MAIN CONTENT */
+.customerCont {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.customer {
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 80%;
+}
+
+.imgGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "img1 img2 img3";
+    gap: 5px;
+}
+
+.customer img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d4b692;
+}
+
+.customerTitle {
+    font-family: 'Alumni Sans';
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: .1em;
+    text-decoration: underline;
+}
+
+.customer div {
+    font-family: 'Inter', sans-serif;
+    font-size: .85em;
+    text-align: justify;
+    padding-bottom: .5em;
+}
+
+/* REVERSE CONT */
+.customerR {
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 80%;
+}
+
+.customerR img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d4b692;
+}
+
+.customerR div {
+    font-family: 'Inter', sans-serif;
+    font-size: .85em;
+    text-align: justify;
+    padding-bottom: .5em;
+}
+
+/* NOSOTROS */
+/* MAIN CONTENT */
+.questionContainer {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.answer {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    background-color: bisque;
+    border: 2px solid #d4b692;
+    width: 78%;
+    padding: 5px 30px 5px 30px;
+    margin-bottom: 10px;
+}
+
+.questionTitle {
+    font-family: 'Alumni Sans';
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+
+    /* HEADER */
+    header {
+        margin-bottom: 2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 2em;
+    }
+
+    /* INDEX */
+    /* MAIN CONTENT */
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "carousel welcome"
+            "info contact";
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .container {
+        padding: 1em 2em 1em 2em;
+    }
+
+    .containerTitle {
+        font-size: 3em;
+    }
+
+    .containerButton {
+        font-size: 2em;
+    }
+
+    /* PRODUCTS */
+    /* MAIN CONTENT */
+    .productPanel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        justify-items: center;
+    }
+
+    .product img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .product p {
+        font-size: .7em;
+    }
+
+    /* CONTACT */
+    /* MAIN CONTENT */
+    .mainContactDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wsp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .wspText {
+        width: 200px;
+    }
+
+    .wsp p {
+        font-size: 2em;
+    }
+
+    .wsp a {
+        font-size: 1.6em;
+    }
+
+    .wsp img {
+        width: 20%;
+        height: 20%;
+    }
+
+    .map {
+        width: 300px;
+    }
+
+    .map img {
+        width: 280px;
+    }
+
+    .map p {
+        font-size: 3em;
+    }
+
+    /* INFO */
+    /* MAIN CONTENT */
+    .customerTitle {
+        font-size: 2.3em;
+    }
+
+    .customerText {
+        font-size: 1.2em;
+    }
+
+    .customer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .customerR img {
+        width: 150px;
+        height: 150px;
+    }
+    .customerTextR {
+        font-size: 1.2em;
+    }
+    
+    /* NOSOTROS */
+    /* MAIN CONTENT */
+    .questionContainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .questionTitle {
+        text-align: center;
+    }
+
+    .answer {
+        font-size: 1.2em;
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+
+    /* HEADER */
+    header {
+        background-color: darkred;
+        margin-bottom: 50px;
+        padding-top: 3px;
+    }
+
+    /* GRID HEADER */
+    .hdGrid {
+        display: grid;
+        grid-template-areas:
+            "title"
+            "subtitle"
+            "nav";
+    }
+
+    /* HEADER TITLE */
+    h1 {
+        font-size: 50px;
+    }
+
+    /* HEADER SUBTITLE */
+    h3 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .hdElement {
+        font-size: 22px;
+    }
+
+    /* NAVBAR */
+    .hdGrid nav {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .hdList {
+        justify-content: center;
+    }
+
+    .hdElement {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 50px;
+    }
+
+    .ftLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "first second third logo"
+            ". copyright copyright ."
+        ;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
+    }
+
+    .ftList {
+        list-style-type: none;
+    }
+
+    .ftElement {
+        font-size: 22px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #copyright {
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 17px;
+    }
+
+    .ftLinks img {
+        justify-self: flex-end;
+        width: 130px;
+    }
+
+    /* INDEX */
+    /* MAIN CONTENT */
+    .content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "carousel welcome"
+        "info contact";
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .container img {
+        width: 250px;
+    }
+
+    .imgWidth{
+        width: 10px;
+    }
+
+    .container {
+        padding: 20px 50px 20px 50px;
+    }
+
+    .containerTitle {
+        font-size: 80px;
+    }
+
+    .containerButton {
+        width: 190px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    /* PRODUCTOS */
+    /* SEARCH BAR */
+    #searchBar {
+        width: 600px;
+        margin: 5px;
+        padding-left: 5px;
+        font-size: 20px;
+    }
+
+    #searchButton {
+        padding: 0px 10px 0px 10px;
+        margin: 5px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* MAIN CONTENT */
+    .section {
+        display: grid;
+        grid-template-columns: 200px auto;
+        justify-items: flex-start;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .productPanel {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        row-gap: 10px;
+        column-gap: 10px;
+        align-content: flex-start;
+    }
+
+    .product {
+        padding: 10px 10px 8px 10px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .product p {
+        text-align: center;
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .filterContainer {
+        padding: 5px 20px 20px 20px;
+        justify-self: flex-start;
+    }
+
+    .filterTitle {
+        font-size: 70px;
+    }
+
+    .filterList li {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+
+    /* CONTACTO */
+    /* MAIN CONTENT */
+    .mainContactDiv {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    /* WHATSAPP */
+    .wsp {
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        width: 600px;
+    }
+
+    .wspText {
+        width: 220px;
+    }
+
+    .wsp img {
+        width: 100px;
+    }
+
+    .wsp p {
+        font-size: 50px;
+        width: 600px;
+    }
+
+    .wsp a {
+        font-size: 30px;
+    }
+
+    /* MAP */
+    .map {
+        padding: 20px;
+        margin-top: 30px;
+        width: 600px;
+    }
+
+    .map p {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .map img {
+        width: 575px;
+    }
+
+    /* FORM */
+    .form legend {
+        text-align: center;
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form label {
+        font-size: 18px;
+        display: inline;
+    }
+
+    .form input {
+        margin-bottom: 15px;
+    }
+
+    .form div {
+        font-size: 18px;
+        display: inline;
+    }
+
+    .form button {
+        font-size: 25px;
+        font-family: 'Alumni Sans';
+        padding: 0 .5em 0 .5em;
+        margin-bottom: .3em;
+        border-radius: 50px;
+        border: 1px solid;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #requireInfo {
+        font-size: 16px;
+    }
+
+    /* INFO */
+    /* MAIN CONTENT */
+    .customer {
+        margin: 0px 30px 10px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .imgGrid img {
+        width: 180px;
+        height: 180px;
+        margin-left: 3px;
+    }
+
+    .imgGridR img {
+        width: 180px;
+        height: 180px;
+        margin-right: 3px;
+    }
+
+    .customerTitle {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+
+    .customerText {
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 15px;
+    }
+
+    .customerR {
+        margin: 0px 30px 10px 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .customerTextR {
+        font-size: 18px;
+        text-align: justify;
+        padding-left: 15px;
+    }
+
+    /* NOSOTROS */
+    /* MAIN CONTENT */
+    .questionContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        row-gap: 20px;
+        column-gap: 50px;
+    }
+
+    .answer {
+        font-size: 21px;
+        text-align: justify;
+        width: 500px;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .questionTitle {
+        font-size: 50px;
+        text-decoration: underline;
+    }
+
+    /* ANIMATIONS, TRANSITIONS & TRANSFORMS */
+    .hdElement:hover {
+        transition: all;
+        transition-duration: .25s;
+        transform: scale(1.15);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .hdElement a:active {
+        color:rgba(0, 0, 0, 0.678);
+    }
+
+    .hoverButton:active {
+        background-color: rgb(218, 218, 218);
+    }
+
+    #searchButton:active {
+        background-color: rgb(218, 218, 218);
+    }
+
+    .link:active {
+        color: rgb(168, 168, 168);
+    }
+
+    .ftList a:active {
+        color: rgb(168, 168, 168);
+    }
+
+    /* PRODUCTS */
+    .filterList li:hover{
+        text-decoration: underline;
+    }
+
+    .product p:hover {
+        text-decoration: underline;
+    }
+
+    /* CONTACT */
+    .wsp a:hover{
+        text-decoration: underline;
+    }
+}

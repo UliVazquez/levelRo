@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level Ro Confecciones</title>
     <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <!-- FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
@@ -20,7 +22,7 @@
         <h1>Level Ro</h1>
 
         <!-- SUBTITLE -->
-        <h3>- - Confecciones - -</h3>
+        <h2>- - Confecciones - -</h2>
 
         <!-- NAVBAR -->
         <nav class="hdNav">
@@ -46,28 +48,65 @@
 
     <!-- MAIN -->
     <div class="mainCont">
-        <section class="content">
+        <section class="indexContent">
             <!-- IMAGE CAROUSEL -->
-            <div class="container" id="carousel">
+            <div class="cont" id="carousel">
                 <p class="containerTitle">¡Ofertas del día!</p>
-                <img src="./img/buzos/buzo1.png" alt="prenda" class="carousel" />
+                <!-- CAROUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <!-- INDICATORS -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <!-- ELEMENTS -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/camperas/campera1.jpg" class="mx-auto d-block rounded-circle img-fluid"
+                                alt="element1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pantalones/pantalon1.jpg" class="mx-auto d-block rounded-circle img-fluid"
+                                alt="element2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/pollera/pollera1.jpg" class="mx-auto d-block rounded-circle img-fluid"
+                                alt="element3">
+                        </div>
+                    </div>
+                    <!-- BUTTONS -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
 
             <!-- WELCOME SECTION -->
-            <div class="container" id="welcome">
+            <div class="cont" id="welcome">
                 <p class="containerTitle">¡Bienvenido/a!</p>
                 <a href="./section/productos.html"><button class="containerButton hoverButton">Ver
                         productos</button></a>
             </div>
 
             <!-- MORE INFO -->
-            <div class="container" id="info">
+            <div class="cont" id="info">
                 <p class="containerTitle">Más Info</p>
                 <a href="./section/nosotros.html"><button class="containerButton hoverButton">Nosotros</button></a>
             </div>
 
             <!-- CONTACT -->
-            <div class="container" id="contact">
+            <div class="cont" id="contact">
                 <p class="containerTitle">Realizar Pedido</p>
                 <a href="./section/contacto.html"><button class="containerButton hoverButton">Contacto</button></a>
             </div>
@@ -111,9 +150,11 @@
             <!-- SOCIAL MEDIA -->
             <div id="thirdList">
                 <ul class="ftList">
-                    <li class="ftElement">Twitter</li>
                     <li class="ftElement">
-                        <a href="https://www.facebook.com/ro.carmo.963" target="_blank">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li class="ftElement">
+                        <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
                     </li>
                     <li class="ftElement">
                         <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
@@ -132,6 +173,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

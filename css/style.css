@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -16,17 +22,18 @@ header {
 }
 
 h1,
-h3 {
+h2 {
     font-family: "Alex Brush";
     color: white;
     text-align: center;
+    font-weight: bold;
 }
 
 h1 {
     font-size: 2em;
 }
 
-h3 {
+h2 {
     padding-bottom: .3em;
     font-size: 1.2em;
 }
@@ -48,6 +55,10 @@ li {
         "nav";
 }
 
+.hdNav {
+    height: 38px;
+}
+
 /* NAVBAR */
 .hdList {
     display: flex;
@@ -60,12 +71,16 @@ li {
     padding-bottom: .3em;
 }
 
+/* DISABLE ANIMATIONS */
+
+
 /* BODY */
 body {
     background-color: cornsilk;
     background-image: url(../img/bg_img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 1.5;
 }
 
 /* LINKS */
@@ -74,16 +89,14 @@ a {
     color: white;
 }
 
-.link {
-    text-decoration: underline;
-}
+
 
 /* AREA NAMES */
 .hdGrid h1 {
     grid-area: title;
 }
 
-.hdGrid h3 {
+.hdGrid h2 {
     grid-area: subtitle;
 }
 
@@ -172,57 +185,52 @@ footer {
 #copyright {
     font-size: 1em;
     font-family: 'Inter', sans-serif;
-    color: white;
     padding-right: 10px;
     align-self: center;
 }
 
-/* INDEX CONTENT */
-.content {
-    display: grid;
-    grid-template-areas:
-        "carousel"
-        "welcome"
-        "info"
-        "contact";
-    gap: 15px;
-    justify-items: center;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
+#copyright p {
+    color: white;
 }
 
-.container {
-    background-color: bisque;
-    border: 6px double #d4b692;
-    padding: .5em 1em .5em 1em;
-    width: fit-content;
-    height: fit-content;
+/* INDEX CONTENT */
+.indexContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
+    row-gap: 10px;
+}
+
+.cont {
+    background-color: bisque;
+    border: 6px double #d4b692;
+    width: fit-content;
+    padding: 0 15px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carousel {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .containerTitle {
-    text-align: center;
     font-size: 3em;
     font-family: 'Alumni Sans';
     text-decoration: underline;
+    color: black;
 }
 
 .containerButton {
     font-size: 1.3em;
     font-family: 'Alumni Sans';
     padding: 0 .5em 0 .5em;
-    margin-top: .3em;
     border-radius: 50px;
     border: 1px solid;
     background-color: rgb(255, 255, 255);
-}
-
-.container img {
-    width: 200px;
+    color: black;
 }
 
 /* PRODUCTS */
@@ -248,7 +256,7 @@ footer {
     padding: 0 .5em 0 .5em;
     border-radius: 50px;
     border: 1px solid;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
 }
 
 /* MAIN CONTENT */
@@ -264,18 +272,22 @@ footer {
 
 .filterList {
     list-style-type: none;
+    padding: 0;
 }
 
 .filterTitle {
     font-size: 3em;
     font-family: 'Alumni Sans';
     border-bottom: 2px solid black;
+    color: black;
+
 }
 
 .filterList li {
     font-weight: bold;
     margin-top: 5px;
     font-size: 1.3em;
+    color: black;
 }
 
 .orderTitle {
@@ -283,6 +295,13 @@ footer {
     font-weight: bold;
     margin-top: 25px;
     font-size: 1.3em;
+    color: black;
+}
+
+#orderProducts {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: .68em;
 }
 
 .section {
@@ -344,6 +363,7 @@ footer {
 }
 
 .wsp p {
+    color: black;
     font-family: 'Alumni Sans';
     font-size: 1.5em;
 }
@@ -372,6 +392,7 @@ footer {
 }
 
 .map p {
+    color: black;
     font-family: 'Alumni Sans';
     font-size: 1.5em;
     text-decoration: underline;
@@ -382,12 +403,14 @@ footer {
 .map img {
     width: 200px;
     border: 2px solid #d4b692;
+    margin-bottom: 5px;
 }
 
 /* FORM */
 .form {
     display: flex;
     flex-direction: column;
+    color: black;
 }
 
 .form fieldset {
@@ -491,6 +514,7 @@ footer {
     text-align: center;
     padding-bottom: .1em;
     text-decoration: underline;
+    color: black;
 }
 
 .customer div {
@@ -498,6 +522,7 @@ footer {
     font-size: .85em;
     text-align: justify;
     padding-bottom: .5em;
+    color: #000;
 }
 
 /* REVERSE CONT */
@@ -524,6 +549,7 @@ footer {
     font-size: .85em;
     text-align: justify;
     padding-bottom: .5em;
+    color: #000;
 }
 
 /* NOSOTROS */
@@ -564,7 +590,7 @@ footer {
         font-size: 3em;
     }
 
-    h3 {
+    h2 {
         font-size: 1.8em;
     }
 
@@ -579,7 +605,7 @@ footer {
 
     /* INDEX */
     /* MAIN CONTENT */
-    .content {
+    .indexContent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -590,7 +616,7 @@ footer {
         row-gap: 40px;
     }
 
-    .container {
+    .cont {
         padding: 1em 2em 1em 2em;
     }
 
@@ -682,10 +708,11 @@ footer {
         width: 150px;
         height: 150px;
     }
+
     .customerTextR {
         font-size: 1.2em;
     }
-    
+
     /* NOSOTROS */
     /* MAIN CONTENT */
     .questionContainer {
@@ -729,7 +756,7 @@ footer {
     }
 
     /* HEADER SUBTITLE */
-    h3 {
+    h2 {
         font-size: 30px;
         padding-bottom: 10px;
     }
@@ -795,38 +822,33 @@ footer {
 
     /* INDEX */
     /* MAIN CONTENT */
-    .content {
+    .indexContent {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas:
-        "carousel welcome"
-        "info contact";
+            "carousel welcome"
+            "carousel info"
+            "carousel contact";
         align-items: center;
         justify-items: center;
         justify-content: center;
-        row-gap: 30px;
+        gap: 0;
     }
 
-    .container img {
-        width: 250px;
-    }
-
-    .imgWidth{
-        width: 10px;
-    }
-
-    .container {
-        padding: 20px 50px 20px 50px;
+    .cont {
+        padding: 10px 20px 10px 20px;
     }
 
     .containerTitle {
-        font-size: 80px;
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
     }
 
     .containerButton {
         width: 190px;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     /* PRODUCTOS */
@@ -873,13 +895,14 @@ footer {
 
     .product p {
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
         padding-top: 5px;
     }
 
     .filterContainer {
         padding: 5px 20px 20px 20px;
         justify-self: flex-start;
+        width: 200px;
     }
 
     .filterTitle {
@@ -902,7 +925,7 @@ footer {
 
     /* WHATSAPP */
     .wsp {
-        padding: 20px;
+        padding: 10px;
         display: flex;
         justify-content: flex-start;
         width: 600px;
@@ -917,7 +940,7 @@ footer {
     }
 
     .wsp p {
-        font-size: 50px;
+        font-size: 46px;
         width: 600px;
     }
 
@@ -927,8 +950,8 @@ footer {
 
     /* MAP */
     .map {
-        padding: 20px;
-        margin-top: 30px;
+        padding: 10px;
+        margin-top: 0;
         width: 600px;
     }
 
@@ -985,7 +1008,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 10px;
     }
 
     .imgGrid img {
@@ -1054,6 +1076,7 @@ footer {
     }
 
     /* ANIMATIONS, TRANSITIONS & TRANSFORMS */
+    /* HEADER */
     .hdElement:hover {
         transition: all;
         transition-duration: .25s;
@@ -1062,9 +1085,15 @@ footer {
     }
 
     .hdElement a:active {
-        color:rgba(0, 0, 0, 0.678);
+        color: rgba(0, 0, 0, 0.678);
+        text-decoration: none;
     }
 
+    .hdElement a:hover {
+        color: white;
+    }
+
+    /* BUTTONS */
     .hoverButton:active {
         background-color: rgb(218, 218, 218);
     }
@@ -1073,16 +1102,18 @@ footer {
         background-color: rgb(218, 218, 218);
     }
 
-    .link:active {
-        color: rgb(168, 168, 168);
+    /* FOOTER */
+    .ftElement a:hover{
+        color: white;
+        text-decoration: underline;
     }
 
-    .ftList a:active {
-        color: rgb(168, 168, 168);
+    .ftElement a:active{
+        color: #0d6efd;
     }
 
     /* PRODUCTS */
-    .filterList li:hover{
+    .filterList li:hover {
         text-decoration: underline;
     }
 
@@ -1091,7 +1122,7 @@ footer {
     }
 
     /* CONTACT */
-    .wsp a:hover{
+    .wsp a:hover {
         text-decoration: underline;
     }
 }

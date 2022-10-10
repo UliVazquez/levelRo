@@ -1,0 +1,73 @@
+/* ANIMATIONS, TRANSITIONS & TRANSFORMS */
+@media screen and (min-width: 1024px) {
+    header {
+        nav {
+            ul {
+                li:hover {
+                    transition: all;
+                    transition-duration: .25s;
+                    transform: scale(1.15);
+                    background-color: rgba(0, 0, 0, 0.2);
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                    a:active {
+                        color: rgba(0, 0, 0, 0.678);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        section {
+            div {
+                ul {
+                    li:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .section {
+        aside {
+            ul {
+                li:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        section {
+            .product {
+                p:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .wsp {
+        div {
+            a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    button:active {
+        background-color: rgb(218, 218, 218);
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+}

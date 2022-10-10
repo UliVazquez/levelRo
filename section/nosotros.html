@@ -10,14 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alumni Sans' rel='stylesheet'>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="hdGrid">
+    <header>
+
         <!-- TITLE -->
         <h1>Level Ro</h1>
 
@@ -25,40 +23,41 @@
         <h2>- - Confecciones - -</h2>
 
         <!-- NAVBAR -->
-        <nav class="hdNav">
-            <ul class="hdList">
-                <li class="hdElement">
+        <nav>
+            <ul>
+                <li>
                     <a href="../index.html">Inicio</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="productos.html">Productos</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="info.html">Información</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="nosotros.html">Nosotros</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <!-- MAIN -->
     <div class="mainCont">
         <div class="questionContainer">
             <!-- QUESTION 1 -->
-            <div class="questionTitle">
+            <div class="containerTitle">
                 <p>¿QUIÉNES SOMOS?</p>
             </div>
             <div class="answer">
-                <p>Somos una empresa de ropa que comenzó como nuestra fundadora, Rosana Carmona, trabajando sola en
+                <p>Somos una empresa de ropa que comenzó con nuestra fundadora, Rosana Carmona, trabajando sola en
                     un pequeño taller en su casa. Actualmente contamos con más de 20 empleados encargados de
                     distintos tipos de labores.</p>
             </div>
             <!-- QUESTION 2 -->
-            <div class="questionTitle">
+            <div class="containerTitle">
                 <p>¿QUÉ OFRECEMOS?</p>
             </div>
             <div class="answer">
@@ -68,7 +67,7 @@
                     para camperas, remeras o conjuntos de egresados.</p>
             </div>
             <!-- QUESTION 3 -->
-            <div class="questionTitle">
+            <div class="containerTitle">
                 <p>GARANTÍA</p>
             </div>
             <div class="answer">
@@ -81,62 +80,51 @@
     </div>
     <!-- FOOTER -->
     <footer>
-        <section class="ftLinks">
+        <section>
             <!-- FIRST LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="productos.html">Productos</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <ul id="firstList">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             <!-- SECOND LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="info.html">Información</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
-                        and
-                        <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="secondList">
+                <li>
+                    <a href="info.html">Información</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
+                    and
+                    <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
+                </li>
+            </ul>
             <!-- SOCIAL MEDIA -->
-            <div id="thirdList">
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="thirdList">
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
+                </li>
+            </ul>
             <!-- LOGO -->
             <img src="../img/logo.png" alt="logo" id="logo" />
-
             <!-- DISCLAIMER -->
-            <div id="copyright">
-                <p>
-                    Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
-                </p>
-            </div>
+            <p id="copyright">
+                Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
+            </p>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"

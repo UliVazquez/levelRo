@@ -10,13 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alumni Sans' rel='stylesheet'>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="hdGrid">
+    <header>
+
         <!-- TITLE -->
         <h1>Level Ro</h1>
 
@@ -24,21 +23,21 @@
         <h2>- - Confecciones - -</h2>
 
         <!-- NAVBAR -->
-        <nav class="hdNav">
-            <ul class="hdList">
-                <li class="hdElement">
+        <nav>
+            <ul>
+                <li>
                     <a href="../index.html">Inicio</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="productos.html">Productos</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="info.html">Información</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="nosotros.html">Nosotros</a>
                 </li>
             </ul>
@@ -52,10 +51,10 @@
                 <!-- WSP -->
                 <div class="wsp">
                     <img src="../img/wsp.png" alt="WhatsApp">
-                    <div class="wspText">
-                        <p>¡Escríbenos ante cualquier duda!</p>
-                        <a href="https://wa.me/542645315313/?text=Bienvenido+a+LevelRo+Confecciones.+¿En+qué+podemos+ayudarte%3F"
-                            target="_blank">+54 9 2645 31-5313</a>
+                    <div>
+                        <p class="containerSubtitle">¡Escríbenos ante cualquier duda!</p>
+                        <a href="http://cuts2.com/XAglY"
+                            target="_blank" class="containerSubtitle">+54 9 2645 31-5313</a>
                     </div>
                 </div>
                 <!-- MAP -->
@@ -67,8 +66,8 @@
                 </div>
             </div>
             <!-- NEWSLETTER -->
-            <form class="form">
-                <fieldset class="form">
+            <form>
+                <fieldset>
                     <legend>Reciba todas las novedades</legend>
                     <label for="name">Nombre<div class="asterisco">*</div></label>
                     <input type="text" required>
@@ -78,7 +77,7 @@
                     <input type="email" required>
                     <label for="numberPhone">Número de Teléfono</label>
                     <input type="text">
-                    <div>
+                    <div class="checkbox">
                         <input type="checkbox" name="TnC" required> Aceptas los <a href="http://cuts2.com/bxBQe"
                             target="_blank" id="TnC">Términos y Condiciones</a>.<div class="asterisco">*</div>
                     </div>
@@ -92,62 +91,51 @@
 
     <!-- FOOTER -->
     <footer>
-        <section class="ftLinks">
+        <section>
             <!-- FIRST LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="productos.html">Productos</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <ul id="firstList">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             <!-- SECOND LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="info.html">Información</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
-                        and
-                        <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="secondList">
+                <li>
+                    <a href="info.html">Información</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
+                    and
+                    <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
+                </li>
+            </ul>
             <!-- SOCIAL MEDIA -->
-            <div id="thirdList">
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="thirdList">
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
+                </li>
+            </ul>
             <!-- LOGO -->
             <img src="../img/logo.png" alt="logo" id="logo" />
-
             <!-- DISCLAIMER -->
-            <div id="copyright">
-                <p>
-                    Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
-                </p>
-            </div>
+            <p id="copyright">
+                Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
+            </p>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"

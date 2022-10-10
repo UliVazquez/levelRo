@@ -1,0 +1,135 @@
+/* PRODUCTS CONTENT */
+/* MOBILE VIEW (320px - 500px) */
+.section {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+    aside {
+        @extend .cont;
+        border: $contBorder1;
+        height: fit-content;
+        padding: .5em 1em .5em 1em;
+        width: 150px;
+        margin-bottom: 2em;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                @extend .containerSubtitle;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+        }
+
+        .containerSubtitle {
+            font-weight: bold;
+
+            select {
+                font-family: $primaryFont;
+                color: black;
+                font-size: .68em;
+            }
+        }
+    }
+
+    section {
+        display: grid;
+        justify-items: center;
+        gap: 15px;
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: $contBGColor;
+            border: $contBorder2;
+
+            img {
+                width: 200px;
+                border: $contBorder2;
+            }
+
+            p {
+                text-align: center;
+                font-family: $primaryFont;
+                font-size: $productFS;
+                padding-top: 2px;
+            }
+        }
+    }
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+    .section {
+        section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            justify-items: center;
+
+            .product {
+                img {
+                    width: 160px;
+                }
+
+                p {
+                    font-size: $productFSTablet;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+    .section {
+        display: grid;
+        grid-template-columns: 200px auto;
+        justify-items: flex-start;
+        justify-content: center;
+        column-gap: 30px;
+
+        aside {
+            padding: 5px 20px 20px 20px;
+            justify-self: flex-start;
+            width: 200px;
+            margin: 0;
+
+            .containerSubtitle {
+                font-size: 22px;
+            }
+
+            ul {
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            gap: 10px;
+            align-content: flex-start;
+
+            .product {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}

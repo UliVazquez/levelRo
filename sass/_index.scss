@@ -1,0 +1,49 @@
+/* INDEX CONTENT */
+/* MOBILE VIEW (320px - 500px) */
+.indexContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carousel {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+    .indexContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "carousel welcome"
+            "info contact";
+        justify-items: center;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+    .indexContent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "carousel welcome"
+            "carousel info"
+            "carousel contact";
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+}

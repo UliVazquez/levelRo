@@ -1,0 +1,62 @@
+/* AREA NAMES */
+header{
+    h1 {
+        grid-area: title;
+    }
+
+    h2 {
+        grid-area: subtitle;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+}
+
+#carousel {
+    grid-area: carousel;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#info {
+    grid-area: info;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#firstList {
+    grid-area: first;
+}
+
+#secondList {
+    grid-area: second;
+}
+
+#thirdList {
+    grid-area: third;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#copyright {
+    grid-area: copyright;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}

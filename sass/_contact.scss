@@ -1,0 +1,226 @@
+/* CONTACT CONTENT */
+/* MOBILE VIEW (320px - 500px) */
+.mainContactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wspMap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wsp {
+            @extend .cont;
+            padding: .5em;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .map {
+            @extend .cont;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            margin-bottom: 1em;
+
+            p {
+                @extend .containerSubtitle;
+                font-size: 1.5em;
+                text-decoration: underline;
+            }
+
+            a {
+                img {
+                    width: 200px*1.2;
+                    height: 120px*1.2;
+                    border: $contBorder2;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    form {
+        width: 90%;
+        color: black;
+
+        fieldset {
+            background-color: $contBGColor;
+            border: $contBorder1;
+            display: flex;
+            flex-direction: column;
+            padding: .5em;
+
+            legend {
+                text-align: center;
+                font-family: $secondaryFont;
+                font-size: $defaultFS*2;
+                background-color: $contBGColor;
+                border: $contBorder2;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            label {
+                font-family: $primaryFont;
+                font-size: $defaultFS;
+                display: inline;
+            }
+
+            input {
+                margin-bottom: 15px;
+            }
+
+            div {
+                display: inline;
+            }
+
+            .checkbox {
+                font-family: $primaryFont;
+                font-size: $defaultFS;
+                margin-bottom: 15px;
+
+                #TnC {
+                    color: black;
+                    text-decoration: underline;
+                }
+            }
+
+            #requireInfo {
+                font-family: $primaryFont;
+                font-size: $defaultFS;
+                margin-bottom: 15px;
+            }
+
+            button {
+                align-self: center;
+                font-size: 1.3em;
+                width: fit-content;
+                height: fit-content;
+                padding: 0px 15px 0px 15px;
+            }
+        }
+    }
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+    .mainContactDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .wspMap {
+            .wsp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+
+                img {
+                    width: 40%;
+                    height: 40%;
+                }
+
+                div {
+
+                    p {
+                        font-size: $subtitleFSTablet;
+                    }
+
+                    a {
+                        font-size: 1.6em;
+                    }
+                }
+            }
+
+            .map {
+                width: 300px;
+
+                .map p {
+                    font-size: 3em;
+                }
+
+                a {
+                    img {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+    .mainContactDiv {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .wspMap {
+            .wsp {
+                padding: 10px;
+                display: flex;
+                justify-content: flex-start;
+                width: fit-content;
+
+                img {
+                    width: 120px;
+                }
+
+                div {
+                    p {
+                        font-size: $defaultFS*2;
+                    }
+
+                    a {
+                        font-size: $defaultFS*2;
+                    }
+                }
+            }
+
+            .map {
+                padding: 10px;
+                margin-top: 0;
+                width: fit-content;
+
+                p {
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    img {
+                        width: 600px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+
+        form {
+            fieldset {
+                .checkbox {
+                    margin: 10px;
+                }
+
+                button {
+                    font-size: $defaultFS*1.5;
+                    padding: 0 .5em 0 .5em;
+                    margin-top: 5px;
+                    margin-bottom: .3em;
+                }
+            }
+        }
+    }
+}

@@ -10,14 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Alumni Sans' rel='stylesheet'>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="hdGrid">
+    <header >
 
         <!-- TITLE -->
         <h1>Level Ro</h1>
@@ -26,21 +23,21 @@
         <h2>- - Confecciones - -</h2>
 
         <!-- NAVBAR -->
-        <nav class="hdNav">
-            <ul class="hdList">
-                <li class="hdElement">
+        <nav>
+            <ul>
+                <li>
                     <a href="../index.html">Inicio</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="productos.html">Productos</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="info.html">Información</a>
                 </li>
-                <li class="hdElement">
+                <li>
                     <a href="nosotros.html">Nosotros</a>
                 </li>
             </ul>
@@ -57,16 +54,16 @@
     <div class="mainCont">
         <div class="section">
             <!-- FILTERS -->
-            <aside class="filterContainer">
-                <p class="filterTitle">Filtros</p>
-                <p class="orderTitle">Ordenar por:
-                    <select name="order" id="orderProducts">
+            <aside>
+                <p class="containerTitle">Filtros</p>
+                <p class="containerSubtitle">Ordenar por:
+                    <select name="order">
                         <option value="empty">Ninguno</option>
                         <option value="minorPrice">Menor precio</option>
                         <option value="maxPrice">Mayor precio</option>
                     </select>
                 </p>
-                <ul class="filterList">
+                <ul>
                     <li>Abrigos</li>
                     <li>Camperas</li>
                     <li>Buzos</li>
@@ -75,9 +72,8 @@
                     <li>Otros</li>
                 </ul>
             </aside>
-
             <!-- PRODUCT LIST -->
-            <section class="productPanel">
+            <section>
                 <div class="product">
                     <img src="../img/buzos/buzo2.webp" alt="producto" />
                     <p>Buzo Mujer Gris</p>
@@ -132,62 +128,51 @@
 
     <!-- FOOTER -->
     <footer>
-        <section class="ftLinks">
+        <section>
             <!-- FIRST LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="productos.html">Productos</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <ul id="firstList">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             <!-- SECOND LIST -->
-            <div>
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="info.html">Información</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
-                        and
-                        <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="secondList">
+                <li>
+                    <a href="info.html">Información</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="http://cuts2.com/RZixT" target="_blank" class="link">Privacy Policy</a>
+                    and
+                    <a href="http://cuts2.com/bxBQe" target="_blank" class="link">T&C</a>
+                </li>
+            </ul>
             <!-- SOCIAL MEDIA -->
-            <div id="thirdList">
-                <ul class="ftList">
-                    <li class="ftElement">
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
-                    </li>
-                    <li class="ftElement">
-                        <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
-                    </li>
-                </ul>
-            </div>
-
+            <ul id="thirdList">
+                <li>
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ro.carmo.963/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/carmo29/" target="_blank">Instagram</a>
+                </li>
+            </ul>
             <!-- LOGO -->
             <img src="../img/logo.png" alt="logo" id="logo" />
-
             <!-- DISCLAIMER -->
-            <div id="copyright">
-                <p>
-                    Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
-                </p>
-            </div>
+            <p id="copyright">
+                Copyright © 2022 - 2022 LevelRo.com™. Todos los derechos reservados.
+            </p>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"

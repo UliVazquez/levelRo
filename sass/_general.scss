@@ -1,0 +1,156 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* BUTTON */
+button {
+    font-size: $defaultFS;
+    font-family: $secondaryFont;
+    text-align: center;
+    padding: 0 .5em 0 .5em;
+    border-radius: 50px;
+    border: $buttonBorder;
+    background-color: $buttonBGColor;
+    color: $buttonColor;
+}
+
+/* BODY */
+body {
+    background-color: cornsilk;
+    background-image: url(../img/bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+}
+
+.asterisco {
+    color: red;
+    font-weight: 700;
+}
+
+/* CONTAINER */
+.cont {
+    background-color: $contBGColor;
+    border: $contBorder1;
+    width: fit-content;
+    padding: 0 15px 5px 15px;
+}
+
+.containerTitle {
+    font-size: $titleFS;
+    font-family: $secondaryFont;
+    text-decoration: underline;
+    color: black;
+}
+
+.containerSubtitle {
+    font-size: $subtitleFS;
+    font-family: $secondaryFont;
+    color: black;
+}
+
+.customer {
+    background-color: $contBGColor;
+    border: $contBorder1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: fit-content;
+}
+
+.customerTitle {
+    font-family: $secondaryFont;
+    font-size: $customerTitleFS;
+    text-align: center;
+    padding-bottom: .1em;
+    text-decoration: underline;
+    color: black;
+}
+
+.customerText {
+    font-family: $primaryFont;
+    font-size: $customerTextFS;
+    text-align: justify;
+    padding-bottom: .5em;
+    color: #000;
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+    button {
+        font-size: $defaultFS+0.2em;
+    }
+
+    .cont {
+        padding: 1em 2em 1em 2em;
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+    button {
+        width: 190px;
+        height: 50px;
+        margin-top: 0;
+        font-size: $defaultFS*2;
+    }
+
+    .cont {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .containerTitle {
+        font-size: $titleFSDesktop;
+    }
+
+    .customer {
+        margin: 0px 30px 10px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customerTitle {
+        font-size: $customerTitleFSDesktop;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .customerText {
+        padding-right: 15px;
+        padding-bottom: 0;
+    }
+}

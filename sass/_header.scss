@@ -1,0 +1,139 @@
+/* HEADER */
+/* MOBILE VIEW (320px - 500px) */
+header {
+    background-color: $headerColor;
+    padding-top: 0.25em;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "nav";
+
+    h1 {
+        font-family: $logoFont;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    h2 {
+        @extend h1;
+        font-size: $defaultFS+0.2em;
+        padding-bottom: 0.3em;
+    }
+
+    nav {
+        height: 38px;
+        background-color: $navColor;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                font-family: $secondaryFont;
+                font-size: $defaultFS;
+            }
+        }
+    }
+
+    .searchBar {
+        display: flex;
+        justify-content: center;
+        background-color: $navColor;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        #searchBar {
+            width: 200px;
+            font-family: $secondaryFont;
+            font-size: $defaultFS;
+        }
+
+        #searchButton {
+            @extend button;
+        }
+    }
+}
+
+/* TABLET VIEW (600px - 1024px) */
+@media screen and (min-width: 600px) {
+    header {
+        margin-bottom: 2em;
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+
+        nav {
+            ul {
+                li {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+/* DESKTOP VIEW (1024px) */
+@media screen and (min-width: 1024px) {
+    header {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "subtitle"
+            "nav";
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+            ul {
+                justify-content: center;
+
+                li {
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .searchBar {
+            #searchBar {
+                width: 600px;
+                margin: 5px;
+                padding-left: 5px;
+                font-size: 22px;
+            }
+
+            #searchButton {
+                width: fit-content;
+                height: fit-content;
+                padding: 0px 10px 0px 10px;
+                margin: 5px;
+                text-align: center;
+                font-size: 22px;
+            }
+        }
+    }
+}

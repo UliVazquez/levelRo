@@ -35,7 +35,7 @@
             }
 
             .customerText {
-                font-size: $customerTextFSTablet;
+                font-size: $defaultFS;
             }
 
             .imgGrid {
@@ -43,10 +43,6 @@
                     width: 150px;
                     height: 150px;
                 }
-            }
-
-            .customerTextR {
-                font-size: 1.2em;
             }
         }
     }

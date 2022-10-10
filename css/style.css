@@ -759,14 +759,11 @@ footer section #copyright {
     font-size: 2.3em;
   }
   .customerCont .customer .customerText {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .customerCont .customer .imgGrid img {
     width: 150px;
     height: 150px;
-  }
-  .customerCont .customer .customerTextR {
-    font-size: 1.2em;
   }
 }
 /* DESKTOP VIEW (1024px) */
@@ -817,8 +814,11 @@ footer section #copyright {
     -moz-column-gap: 50px;
          column-gap: 50px;
   }
+  .questionContainer .containerTitle {
+    font-size: 55px;
+  }
   .questionContainer .answer {
-    font-size: 22px;
+    font-size: 1em;
     padding: 10px 30px 10px 30px;
   }
 }

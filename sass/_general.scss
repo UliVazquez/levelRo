@@ -19,6 +19,24 @@ h6 {
     margin: 0;
 }
 
+h3 {
+    font-size: $titleFS;
+    font-family: $secondaryFont;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: $subtitleFS;
+    font-family: $secondaryFont;
+}
+
+h5 {
+    text-align: center;
+    font-family: $primaryFont;
+    font-size: $productFS;
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -49,6 +67,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.5;
+    color: #000;
 }
 
 .asterisco {
@@ -62,19 +81,6 @@ body {
     border: $contBorder1;
     width: fit-content;
     padding: 0 15px 5px 15px;
-}
-
-.containerTitle {
-    font-size: $titleFS;
-    font-family: $secondaryFont;
-    text-decoration: underline;
-    color: black;
-}
-
-.containerSubtitle {
-    font-size: $subtitleFS;
-    font-family: $secondaryFont;
-    color: black;
 }
 
 .customer {
@@ -96,7 +102,6 @@ body {
     text-align: center;
     padding-bottom: .1em;
     text-decoration: underline;
-    color: black;
 }
 
 .customerText {
@@ -104,13 +109,20 @@ body {
     font-size: $customerTextFS;
     text-align: justify;
     padding-bottom: .5em;
-    color: #000;
 }
 
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
     button {
         font-size: $defaultFS+0.2em;
+    }
+
+    h4 {
+        font-size: $subtitleFSTablet;
+    }
+
+    h5 {
+        font-size: $productFSTablet;
     }
 
     .cont {
@@ -125,6 +137,10 @@ body {
         height: 50px;
         margin-top: 0;
         font-size: $defaultFS*2;
+    }
+
+    h5 {
+        font-size: 14px;
     }
 
     .cont {

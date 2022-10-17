@@ -77,9 +77,29 @@ h1, header h2,
 h2,
 h3,
 h4,
+.mainContactDiv .wspMap .wsp div a,
+.section aside ul li,
 h5,
 h6 {
   margin: 0;
+}
+
+h3 {
+  font-size: 3em;
+  font-family: "Alumni Sans";
+  text-align: center;
+  text-decoration: underline;
+}
+
+h4, .mainContactDiv .wspMap .wsp div a, .section aside ul li {
+  font-size: 1.3em;
+  font-family: "Alumni Sans";
+}
+
+h5 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85em;
 }
 
 ul {
@@ -112,6 +132,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.5;
+  color: #000;
 }
 
 .asterisco {
@@ -127,19 +148,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 15px 5px 15px;
-}
-
-.containerTitle {
-  font-size: 3em;
-  font-family: "Alumni Sans";
-  text-decoration: underline;
-  color: black;
-}
-
-.containerSubtitle, .mainContactDiv .wspMap .map p, .section aside ul li {
-  font-size: 1.3em;
-  font-family: "Alumni Sans";
-  color: black;
 }
 
 .customer {
@@ -159,11 +167,10 @@ body {
 
 .customerTitle {
   font-family: "Alumni Sans";
-  font-size: 1.5em;
+  font-size: 2.3em;
   text-align: center;
   padding-bottom: 0.1em;
   text-decoration: underline;
-  color: black;
 }
 
 .customerText {
@@ -171,13 +178,18 @@ body {
   font-size: 0.85em;
   text-align: justify;
   padding-bottom: 0.5em;
-  color: #000;
 }
 
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
   button, header .searchBar #searchButton {
     font-size: 1.2em;
+  }
+  h4, .mainContactDiv .wspMap .wsp div a, .section aside ul li {
+    font-size: 2em;
+  }
+  h5 {
+    font-size: 0.7em;
   }
   .cont, .mainContactDiv .wspMap .map, .mainContactDiv .wspMap .wsp, .section aside {
     padding: 1em 2em 1em 2em;
@@ -190,6 +202,9 @@ body {
     height: 50px;
     margin-top: 0;
     font-size: 2em;
+  }
+  h5 {
+    font-size: 14px;
   }
   .cont, .mainContactDiv .wspMap .map, .mainContactDiv .wspMap .wsp, .section aside {
     padding: 10px 20px 10px 20px;
@@ -326,31 +341,29 @@ footer {
   background-color: darkred;
   padding-top: 0.25em;
   margin-top: 1.5em;
-}
-footer section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "first second third" "logo logo copyright";
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   gap: 1em;
 }
-footer section ul {
+footer ul {
   list-style-type: none;
 }
-footer section ul li {
+footer ul li {
   color: white;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   font-family: "Alumni Sans";
   font-size: 1.2em;
 }
-footer section img {
+footer img {
   width: 100px;
   justify-self: center;
   align-self: center;
 }
-footer section #copyright {
+footer #copyright {
   font-size: 1em;
   font-family: "Inter", sans-serif;
   padding-right: 10px;
@@ -368,31 +381,27 @@ footer section #copyright {
 @media screen and (min-width: 1024px) {
   footer {
     margin-top: 50px;
-  }
-  footer section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "first second third logo" ". copyright copyright .";
-    padding-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     align-items: center;
   }
-  footer section ul li {
+  footer ul li {
     font-size: 1.5em;
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  footer section img {
+  footer img {
     justify-self: flex-end;
     width: 130px;
   }
-  footer section #copyright {
+  footer #copyright {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 0;
-    font-size: 1em;
   }
 }
 /* INDEX CONTENT */
@@ -453,20 +462,18 @@ footer section #copyright {
   width: 150px;
   margin-bottom: 2em;
 }
+.section aside h4, .section aside .mainContactDiv .wspMap .wsp div a, .mainContactDiv .wspMap .wsp div .section aside a, .section aside ul li {
+  font-weight: bold;
+}
+.section aside h4 select, .section aside .mainContactDiv .wspMap .wsp div a select, .mainContactDiv .wspMap .wsp div .section aside a select, .section aside ul li select {
+  font-family: "Inter", sans-serif;
+  font-size: 0.68em;
+}
 .section aside ul {
   list-style-type: none;
 }
 .section aside ul li {
-  font-weight: bold;
   margin-top: 5px;
-}
-.section aside .containerSubtitle, .section aside .mainContactDiv .wspMap .map p, .mainContactDiv .wspMap .map .section aside p, .section aside ul li {
-  font-weight: bold;
-}
-.section aside .containerSubtitle select, .section aside .mainContactDiv .wspMap .map p select, .mainContactDiv .wspMap .map .section aside p select, .section aside ul li select {
-  font-family: "Inter", sans-serif;
-  color: black;
-  font-size: 0.68em;
 }
 .section section {
   display: grid;
@@ -486,10 +493,7 @@ footer section #copyright {
   width: 200px;
   border: 2px solid #d4b692;
 }
-.section section .product p {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 0.85em;
+.section section .product h5 {
   padding-top: 2px;
 }
 
@@ -503,9 +507,6 @@ footer section #copyright {
   }
   .section section .product img {
     width: 160px;
-  }
-  .section section .product p {
-    font-size: 0.7em;
   }
 }
 /* DESKTOP VIEW (1024px) */
@@ -524,7 +525,7 @@ footer section #copyright {
     width: 200px;
     margin: 0;
   }
-  .section aside .containerSubtitle, .section aside .mainContactDiv .wspMap .map p, .mainContactDiv .wspMap .map .section aside p, .section aside ul li {
+  .section aside h4, .section aside .mainContactDiv .wspMap .wsp div a, .mainContactDiv .wspMap .wsp div .section aside a, .section aside ul li {
     font-size: 22px;
   }
   .section aside ul li {
@@ -540,9 +541,7 @@ footer section #copyright {
     width: 200px;
     height: 200px;
   }
-  .section section .product p {
-    text-align: center;
-    font-size: 14px;
+  .section section .product h5 {
     padding-top: 3px;
   }
 }
@@ -571,6 +570,9 @@ footer section #copyright {
   width: 50px;
   height: 50px;
 }
+.mainContactDiv .wspMap .wsp div a {
+  color: black;
+}
 .mainContactDiv .wspMap .map {
   display: flex;
   flex-direction: column;
@@ -580,8 +582,7 @@ footer section #copyright {
   width: fit-content;
   margin-bottom: 1em;
 }
-.mainContactDiv .wspMap .map p {
-  font-size: 1.5em;
+.mainContactDiv .wspMap .map h4, .mainContactDiv .wspMap .map .section aside ul li, .section aside ul .mainContactDiv .wspMap .map li, .mainContactDiv .wspMap .map .wsp div a, .mainContactDiv .wspMap .wsp div .map a {
   text-decoration: underline;
 }
 .mainContactDiv .wspMap .map a img {
@@ -663,17 +664,11 @@ footer section #copyright {
     width: 40%;
     height: 40%;
   }
-  .mainContactDiv .wspMap .wsp div p {
-    font-size: 2em;
-  }
   .mainContactDiv .wspMap .wsp div a {
     font-size: 1.6em;
   }
   .mainContactDiv .wspMap .map {
     width: 300px;
-  }
-  .mainContactDiv .wspMap .map .map p {
-    font-size: 3em;
   }
   .mainContactDiv .wspMap .map a img {
     width: 280px;
@@ -698,7 +693,7 @@ footer section #copyright {
   .mainContactDiv .wspMap .wsp img {
     width: 120px;
   }
-  .mainContactDiv .wspMap .wsp div p {
+  .mainContactDiv .wspMap .wsp div h4, .mainContactDiv .wspMap .wsp div .section aside ul li, .section aside ul .mainContactDiv .wspMap .wsp div li, .mainContactDiv .wspMap .wsp div a {
     font-size: 2em;
   }
   .mainContactDiv .wspMap .wsp div a {
@@ -711,8 +706,8 @@ footer section #copyright {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .mainContactDiv .wspMap .map p {
-    font-size: 50px;
+  .mainContactDiv .wspMap .map h4, .mainContactDiv .wspMap .map .section aside ul li, .section aside ul .mainContactDiv .wspMap .map li, .mainContactDiv .wspMap .map .wsp div a, .mainContactDiv .wspMap .wsp div .map a {
+    font-size: 2em;
     margin-bottom: 20px;
   }
   .mainContactDiv .wspMap .map a img {
@@ -741,6 +736,12 @@ footer section #copyright {
   margin-left: 10px;
   margin-right: 10px;
 }
+.customerCont .customer div h3 {
+  font-size: 2.3em;
+}
+.customerCont .customer div .customerText {
+  font-size: 1em;
+}
 .customerCont .customer .imgGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -755,12 +756,6 @@ footer section #copyright {
 
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
-  .customerCont .customer .customerTitle {
-    font-size: 2.3em;
-  }
-  .customerCont .customer .customerText {
-    font-size: 1em;
-  }
   .customerCont .customer .imgGrid img {
     width: 150px;
     height: 150px;
@@ -768,6 +763,9 @@ footer section #copyright {
 }
 /* DESKTOP VIEW (1024px) */
 @media screen and (min-width: 1024px) {
+  .customerCont .customer div h3 {
+    font-size: 40px;
+  }
   .customerCont .customer .imgGrid img {
     width: 180px;
     height: 180px;
@@ -780,9 +778,6 @@ footer section #copyright {
   justify-content: center;
   justify-items: center;
   align-items: center;
-}
-.questionContainer .containerTitle {
-  text-align: center;
 }
 .questionContainer .answer {
   font-family: "Inter", sans-serif;
@@ -813,9 +808,6 @@ footer section #copyright {
     row-gap: 20px;
     -moz-column-gap: 50px;
          column-gap: 50px;
-  }
-  .questionContainer .containerTitle {
-    font-size: 55px;
   }
   .questionContainer .answer {
     font-size: 1em;

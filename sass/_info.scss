@@ -10,6 +10,16 @@
         margin-left: 10px;
         margin-right: 10px;
 
+        div {
+            h3 {
+                font-size: $customerTitleFS;
+            }
+
+            .customerText {
+                font-size: $defaultFS;
+            }
+        }
+
         .imgGrid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -30,14 +40,6 @@
 @media screen and (min-width: 600px) {
     .customerCont {
         .customer {
-            .customerTitle {
-                font-size: $customerTitleFSTablet;
-            }
-
-            .customerText {
-                font-size: $defaultFS;
-            }
-
             .imgGrid {
                 img {
                     width: 150px;
@@ -52,6 +54,12 @@
 @media screen and (min-width: 1024px) {
     .customerCont {
         .customer {
+            div {
+                h3 {
+                    font-size: $customerTitleFSDesktop;
+                }
+            }
+
             .imgGrid {
                 img {
                     width: 180px;

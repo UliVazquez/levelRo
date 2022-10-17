@@ -6,10 +6,6 @@
     justify-items: center;
     align-items: center;
 
-    .containerTitle {
-        text-align: center;
-    }
-
     .answer {
         font-family: $primaryFont;
         font-size: $defaultFS;
@@ -42,9 +38,9 @@
         row-gap: 20px;
         column-gap: 50px;
 
-        .containerTitle {
-            font-size: 55px;
-        }
+        // h3 {
+        //     font-size: 55px;
+        // }
 
         .answer {
             font-size: $defaultFS;

@@ -3,42 +3,39 @@ footer {
     background-color: $headerColor;
     padding-top: .25em;
     margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "first second third"
+        "logo logo copyright";
+    padding-left: .5em;
+    padding-right: .5em;
+    gap: 1em;
 
-    section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            "first second third"
-            "logo logo copyright";
-        margin-left: .5em;
-        margin-right: .5em;
-        gap: 1em;
+    ul {
+        list-style-type: none;
 
-        ul {
-            list-style-type: none;
-
-            li {
-                color: white;
-                padding-top: .3em;
-                padding-bottom: .3em;
-                font-family: $secondaryFont;
-                font-size: $defaultFS+0.2em;
-            }
-        }
-
-        img {
-            width: 100px;
-            justify-self: center;
-            align-self: center;
-        }
-
-        #copyright {
-            font-size: $defaultFS;
-            font-family: $primaryFont;
-            padding-right: 10px;
-            align-self: center;
+        li {
             color: white;
+            padding-top: .3em;
+            padding-bottom: .3em;
+            font-family: $secondaryFont;
+            font-size: $defaultFS+0.2em;
         }
+    }
+
+    img {
+        width: 100px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #copyright {
+        font-size: $defaultFS;
+        font-family: $primaryFont;
+        padding-right: 10px;
+        align-self: center;
+        color: white;
     }
 }
 
@@ -53,38 +50,33 @@ footer {
 @media screen and (min-width: 1024px) {
     footer {
         margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "first second third logo"
+            ". copyright copyright .";
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
 
-        section {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "first second third logo"
-                ". copyright copyright .";
-            padding-top: 10px;
-            margin-right: 10px;
-            margin-left: 10px;
-            align-items: center;
-
-            ul {
-                li {
-                    font-size: $defaultFS+.5em;
-                    padding-top: 1em;
-                    padding-bottom: 1em;
-                }
+        ul {
+            li {
+                font-size: $defaultFS+.5em;
+                padding-top: 1em;
+                padding-bottom: 1em;
             }
+        }
 
-            img {
-                justify-self: flex-end;
-                width: 130px;
-            }
+        img {
+            justify-self: flex-end;
+            width: 130px;
+        }
 
-            #copyright {
-                text-align: center;
-                margin-bottom: 10px;
-                margin-top: 10px;
-                padding: 0;
-                font-size: $defaultFS;
-            }
+        #copyright {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 0;
         }
     }
 }

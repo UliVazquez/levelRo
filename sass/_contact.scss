@@ -22,6 +22,13 @@
                 width: 50px;
                 height: 50px;
             }
+
+            div {
+                a {
+                    @extend h4;
+                    color: black;
+                }
+            }
         }
 
         .map {
@@ -32,9 +39,7 @@
             width: fit-content;
             margin-bottom: 1em;
 
-            p {
-                @extend .containerSubtitle;
-                font-size: 1.5em;
+            h4 {
                 text-decoration: underline;
             }
 
@@ -131,11 +136,6 @@
                 }
 
                 div {
-
-                    p {
-                        font-size: $subtitleFSTablet;
-                    }
-
                     a {
                         font-size: 1.6em;
                     }
@@ -144,10 +144,6 @@
 
             .map {
                 width: 300px;
-
-                .map p {
-                    font-size: 3em;
-                }
 
                 a {
                     img {
@@ -179,7 +175,7 @@
                 }
 
                 div {
-                    p {
+                    h4 {
                         font-size: $defaultFS*2;
                     }
 
@@ -194,8 +190,8 @@
                 margin-top: 0;
                 width: fit-content;
 
-                p {
-                    font-size: 50px;
+                h4 {
+                    font-size: $defaultFS*2;
                     margin-bottom: 20px;
                 }
 

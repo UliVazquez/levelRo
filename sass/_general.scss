@@ -75,6 +75,14 @@ body {
     font-weight: 700;
 }
 
+.product a{
+    color: #000;
+}
+
+.product a:hover{
+    color: #000;
+}
+
 /* CONTAINER */
 .cont {
     background-color: $contBGColor;

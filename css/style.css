@@ -140,6 +140,14 @@ body {
   font-weight: 700;
 }
 
+.product a {
+  color: #000;
+}
+
+.product a:hover {
+  color: #000;
+}
+
 /* CONTAINER */
 .cont, .mainContactDiv .wspMap .map, .mainContactDiv .wspMap .wsp, .section aside {
   background-color: bisque;

@@ -47,13 +47,17 @@
             background-color: $contBGColor;
             border: $contBorder2;
 
-            img {
-                width: 200px;
-                border: $contBorder2;
-            }
+            a {
+                color: black;
 
-            h5 {
-                padding-top: 2px;
+                img {
+                    width: 200px;
+                    border: $contBorder2;
+                }
+
+                h5 {
+                    padding-top: 2px;
+                }
             }
         }
     }
@@ -65,6 +69,7 @@
         aside {
             width: 200px;
         }
+
         section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

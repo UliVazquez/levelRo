@@ -530,11 +530,14 @@ footer #copyright {
   background-color: bisque;
   border: 2px solid #d4b692;
 }
-.section section .product img {
+.section section .product a {
+  color: black;
+}
+.section section .product a img {
   width: 200px;
   border: 2px solid #d4b692;
 }
-.section section .product h5 {
+.section section .product a h5 {
   padding-top: 2px;
 }
 

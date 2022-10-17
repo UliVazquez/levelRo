@@ -62,6 +62,9 @@
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
     .section {
+        aside {
+            width: 200px;
+        }
         section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

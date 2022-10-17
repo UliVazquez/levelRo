@@ -180,6 +180,29 @@ body {
   padding-bottom: 0.5em;
 }
 
+/* MODAL */
+.btn {
+  font-size: 24px;
+}
+
+.imgGrid img:hover {
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: darkred;
+  border-bottom: 1px solid #e36868;
+}
+
+.modal-body {
+  background-color: cornsilk;
+}
+
+.modal-footer {
+  background-color: darkred;
+  border-top: 1px solid #e36868;
+}
+
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
   button, header .searchBar #searchButton {
@@ -816,6 +839,10 @@ footer #copyright {
 }
 /* ANIMATIONS, TRANSITIONS & TRANSFORMS */
 @media screen and (min-width: 1024px) {
+  h1, header h2,
+h2:hover {
+    cursor: default;
+  }
   header nav ul li:hover {
     transition: all;
     transition-duration: 0.25s;
@@ -829,14 +856,16 @@ footer #copyright {
     color: rgba(0, 0, 0, 0.678);
     text-decoration: none;
   }
-  footer section div ul li:hover {
+  footer div ul li:hover {
     text-decoration: underline;
   }
   .section aside ul li:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
-  .section section .product p:hover {
+  .section section .product:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
   .wsp div a:hover {
     color: black;

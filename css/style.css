@@ -114,7 +114,7 @@ a {
 }
 
 /* BUTTON */
-button, header .searchBar #searchButton {
+.buttonWhite, header .searchBar #searchButton {
   font-size: 1em;
   font-family: "Alumni Sans";
   text-align: center;
@@ -217,7 +217,7 @@ body {
 
 /* TABLET VIEW (600px - 1024px) */
 @media screen and (min-width: 600px) {
-  button, header .searchBar #searchButton {
+  .buttonWhite, header .searchBar #searchButton {
     font-size: 1.2em;
   }
   h4, .mainContactDiv .wspMap .wsp div a, .section aside ul li {
@@ -232,7 +232,7 @@ body {
 }
 /* DESKTOP VIEW (1024px) */
 @media screen and (min-width: 1024px) {
-  button, header .searchBar #searchButton {
+  .buttonWhite, header .searchBar #searchButton {
     width: 190px;
     height: 50px;
     margin-top: 0;
@@ -270,6 +270,7 @@ header {
   background-color: darkred;
   padding-top: 0.25em;
   margin-bottom: 1.5em;
+  border-bottom: 5px solid brown;
   display: grid;
   grid-template-areas: "title" "subtitle" "nav";
 }
@@ -284,18 +285,18 @@ header h2 {
   font-size: 1.2em;
   padding-bottom: 0.3em;
 }
-header nav {
+header #mainNav {
   height: 38px;
   background-color: brown;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 }
-header nav ul {
+header #mainNav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
 }
-header nav ul li {
+header #mainNav ul li {
   font-family: "Alumni Sans";
   font-size: 1em;
 }
@@ -322,7 +323,7 @@ header .searchBar #searchBar {
   header h2 {
     font-size: 1.8em;
   }
-  header nav ul li {
+  header #mainNav ul li {
     font-size: 1.2em;
   }
 }
@@ -340,14 +341,14 @@ header .searchBar #searchBar {
     font-size: 30px;
     padding-bottom: 10px;
   }
-  header nav {
+  header #mainNav {
     padding-top: 2px;
     padding-bottom: 2px;
   }
-  header nav ul {
+  header #mainNav ul {
     justify-content: center;
   }
-  header nav ul li {
+  header #mainNav ul li {
     padding-right: 30px;
     padding-left: 30px;
     font-size: 22px;
@@ -369,6 +370,124 @@ header .searchBar #searchBar {
     margin: 5px;
     text-align: center;
     font-size: 22px;
+  }
+}
+.overlay {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+#hamburger-input {
+  display: none;
+}
+
+#mainNav {
+  display: none;
+}
+
+#container-menu {
+  width: 200px;
+  height: 100%;
+  background: brown;
+  padding: 30px 20px;
+  z-index: 100;
+}
+#container-menu h4, #container-menu .mainContactDiv .wspMap .wsp div a, .mainContactDiv .wspMap .wsp div #container-menu a, #container-menu .section aside ul li, .section aside ul #container-menu li {
+  font-size: 48px;
+  color: white;
+  border-bottom: 1px solid rgba(255, 174, 174, 0.2);
+}
+#container-menu ul {
+  margin-top: 1em;
+  list-style-type: none;
+}
+#container-menu ul li {
+  line-height: 2em;
+}
+
+#hamburger-menu {
+  display: block;
+  padding: 10px;
+  z-index: 90;
+  position: absolute;
+  top: 0.25em;
+  left: 5px;
+}
+#hamburger-menu .menu-bars {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 101;
+}
+#hamburger-menu .menu-bars .bar {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  left: 5px;
+  background: white;
+  z-index: 101;
+  transition: 0.6s;
+}
+#hamburger-menu .menu-bars #bar1 {
+  top: 9px;
+}
+#hamburger-menu .menu-bars #bar2 {
+  top: 14px;
+}
+#hamburger-menu .menu-bars #bar3 {
+  top: 19px;
+}
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 100;
+}
+
+#hamburger-input:checked + #hamburger-menu #bar1 {
+  transform: translate(0, 5px) rotate(45deg);
+}
+
+#hamburger-input:checked + #hamburger-menu #bar2 {
+  opacity: 0;
+}
+
+#hamburger-input:checked + #hamburger-menu #bar3 {
+  transform: translate(0, -5px) rotate(-45deg);
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+
+#hamburger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 600px) {
+  #mainNav {
+    display: block;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  header {
+    border-bottom: 0;
   }
 }
 /* FOOTER */
@@ -677,7 +796,7 @@ footer #copyright {
   font-size: 1em;
   margin-bottom: 15px;
 }
-.mainContactDiv form fieldset button, .mainContactDiv form fieldset header .searchBar #searchButton, header .searchBar .mainContactDiv form fieldset #searchButton {
+.mainContactDiv form fieldset .buttonWhite, .mainContactDiv form fieldset header .searchBar #searchButton, header .searchBar .mainContactDiv form fieldset #searchButton {
   align-self: center;
   font-size: 1.3em;
   width: -webkit-fit-content;
@@ -758,7 +877,7 @@ footer #copyright {
   .mainContactDiv form fieldset .checkbox {
     margin: 10px;
   }
-  .mainContactDiv form fieldset button, .mainContactDiv form fieldset header .searchBar #searchButton, header .searchBar .mainContactDiv form fieldset #searchButton {
+  .mainContactDiv form fieldset .buttonWhite, .mainContactDiv form fieldset header .searchBar #searchButton, header .searchBar .mainContactDiv form fieldset #searchButton {
     font-size: 1.5em;
     padding: 0 0.5em 0 0.5em;
     margin-top: 5px;
@@ -861,16 +980,16 @@ footer #copyright {
 h2:hover {
     cursor: default;
   }
-  header nav ul li:hover {
+  header #mainNav ul li:hover {
     transition: all;
     transition-duration: 0.25s;
     transform: scale(1.15);
     background-color: rgba(0, 0, 0, 0.2);
   }
-  header nav ul li:hover a:hover {
+  header #mainNav ul li:hover a:hover {
     text-decoration: none;
   }
-  header nav ul li:hover a:active {
+  header #mainNav ul li:hover a:active {
     color: rgba(0, 0, 0, 0.678);
     text-decoration: none;
   }
@@ -889,7 +1008,7 @@ h2:hover {
     color: black;
     text-decoration: underline;
   }
-  button:active, header .searchBar #searchButton:active {
+  .buttonWhite:active, header .searchBar #searchButton:active {
     background-color: rgb(218, 218, 218);
   }
   a:hover {

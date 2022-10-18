@@ -22,8 +22,8 @@
         <h1>Level Ro</h1>
         <!-- SUBTITLE -->
         <h2>- - <strong>Confecciones</strong> - -</h2>
-        <!-- NAVBAR -->
-        <nav>
+        <!-- NAVBAR MAIN -->
+        <nav id="mainNav">
             <ul>
                 <li>
                     <a href="index.html">Inicio</a>
@@ -42,6 +42,37 @@
                 </li>
             </ul>
         </nav>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <div class="menu-bars">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </div>
+            <nav id="sidebar-menu">
+                <div id="container-menu">
+                    <h4>Menú</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./section/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./section/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./section/info.html">Información</a>
+                        </li>
+                        <li>
+                            <a href="./section/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </label>
+        <div class="overlay"></div>
     </header>
     <!-- MAIN -->
     <main class="indexContent">
@@ -79,18 +110,17 @@
         <!-- WELCOME SECTION -->
         <section class="cont" id="welcome">
             <h3>¡Bienvenido/a!</h3>
-            <a href="./section/productos.html"><button>Ver
-                    productos</button></a>
+            <a href="./section/productos.html"><button class="buttonWhite">Ver productos</button></a>
         </section>
         <!-- MORE INFO -->
         <section class="cont" id="info">
             <h3>Más Info</h3>
-            <a href="./section/nosotros.html"><button>Nosotros</button></a>
+            <a href="./section/nosotros.html"><button class="buttonWhite">Nosotros</button></a>
         </section>
         <!-- CONTACT -->
         <section class="cont" id="contact">
             <h3>Realizar Pedido</h3>
-            <a href="./section/contacto.html"><button>Contacto</button></a>
+            <a href="./section/contacto.html"><button class="buttonWhite">Contacto</button></a>
         </section>
     </main>
     <!-- FOOTER -->

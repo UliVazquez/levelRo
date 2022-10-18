@@ -4,6 +4,7 @@ header {
     background-color: $headerColor;
     padding-top: 0.25em;
     margin-bottom: 1.5em;
+    border-bottom: 5px solid $navColor;
     display: grid;
     grid-template-areas:
         "title"
@@ -24,7 +25,7 @@ header {
         padding-bottom: 0.3em;
     }
 
-    nav {
+    #mainNav {
         height: 38px;
         background-color: $navColor;
         padding-top: 0.3em;
@@ -56,7 +57,7 @@ header {
         }
 
         #searchButton {
-            @extend button;
+            @extend .buttonWhite;
         }
     }
 }
@@ -74,7 +75,7 @@ header {
             font-size: 1.8em;
         }
 
-        nav {
+        #mainNav {
             ul {
                 li {
                     font-size: 1.2em;
@@ -103,7 +104,7 @@ header {
             padding-bottom: 10px;
         }
 
-        nav {
+        #mainNav {
             padding-top: 2px;
             padding-bottom: 2px;
 

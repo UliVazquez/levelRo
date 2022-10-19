@@ -606,6 +606,9 @@ footer #copyright {
     justify-content: center;
     gap: 0;
   }
+  .indexContent section h3 {
+    font-size: 64px;
+  }
 }
 /* PRODUCTS CONTENT */
 /* MOBILE VIEW (320px - 500px) */

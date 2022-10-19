@@ -301,7 +301,7 @@ header #mainNav ul li {
   font-size: 1em;
 }
 header .searchBar {
-  display: flex;
+  display: none;
   justify-content: center;
   background-color: brown;
   padding-top: 5px;
@@ -352,6 +352,9 @@ header .searchBar #searchBar {
     padding-right: 30px;
     padding-left: 30px;
     font-size: 22px;
+  }
+  header .searchBar {
+    display: flex;
   }
   header .searchBar #searchBar {
     width: 600px;
@@ -479,7 +482,12 @@ header .searchBar #searchBar {
   opacity: 0.3;
 }
 
-@media screen and (min-width: 600px) {
+#burger-search-bar {
+  width: 100%;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 1024px) {
   #mainNav {
     display: block;
   }
@@ -671,7 +679,7 @@ footer #copyright {
     gap: 5px;
     justify-items: center;
   }
-  .section section .product img {
+  .section section .product a img {
     width: 160px;
   }
 }
@@ -703,11 +711,10 @@ footer #copyright {
     gap: 10px;
     align-content: flex-start;
   }
-  .section section .product img {
+  .section section .product a img {
     width: 200px;
-    height: 200px;
   }
-  .section section .product h5 {
+  .section section .product a h5 {
     padding-top: 3px;
   }
 }
@@ -733,7 +740,7 @@ footer #copyright {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   #main-filter-list {
     display: block;
   }

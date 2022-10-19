@@ -79,8 +79,10 @@
             justify-items: center;
 
             .product {
-                img {
-                    width: 160px;
+                a {
+                    img {
+                        width: 160px;
+                    }
                 }
             }
         }
@@ -120,13 +122,14 @@
             align-content: flex-start;
 
             .product {
-                img {
-                    width: 200px;
-                    height: 200px;
-                }
+                a {
+                    img {
+                        width: 200px;
+                    }
 
-                h5 {
-                    padding-top: 3px;
+                    h5 {
+                        padding-top: 3px;
+                    }
                 }
             }
         }

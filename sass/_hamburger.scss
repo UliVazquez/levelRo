@@ -118,7 +118,13 @@
     opacity: 0.3;
 }
 
-@media screen and (min-width: 600px) {
+// Searchbar
+#burger-search-bar {
+    width: 100%;
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 1024px) {
     #mainNav {
         display: block;
     }
@@ -131,3 +137,4 @@
         border-bottom: 0;
     }
 }
+

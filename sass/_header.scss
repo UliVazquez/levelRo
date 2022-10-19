@@ -44,7 +44,7 @@ header {
     }
 
     .searchBar {
-        display: flex;
+        display: none;
         justify-content: center;
         background-color: $navColor;
         padding-top: 5px;
@@ -120,6 +120,8 @@ header {
         }
 
         .searchBar {
+            display: flex;
+
             #searchBar {
                 width: 600px;
                 margin: 5px;

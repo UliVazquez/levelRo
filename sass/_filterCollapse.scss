@@ -1,0 +1,31 @@
+#filter-title:hover {
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0;
+    margin-left: auto;
+    margin-right: auto; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #000;
+}
+
+#main-filter-list {
+    display: none;
+}
+
+#collapse-filter-list {
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    #main-filter-list {
+        display: block;
+    }
+
+    #collapse-filter-list {
+        display: none;
+    }
+}

@@ -16,6 +16,7 @@
 
         h4 {
             font-weight: bold;
+            width: fit-content;
 
             select {
                 font-family: $primaryFont;
@@ -29,6 +30,7 @@
             li {
                 @extend h4;
                 margin-top: 5px;
+                width: fit-content;
             }
         }
     }

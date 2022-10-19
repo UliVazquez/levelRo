@@ -618,6 +618,9 @@ footer #copyright {
 }
 .section aside h4, .section aside .mainContactDiv .wspMap .wsp div a, .mainContactDiv .wspMap .wsp div .section aside a, .section aside ul li {
   font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .section aside h4 select, .section aside .mainContactDiv .wspMap .wsp div a select, .mainContactDiv .wspMap .wsp div .section aside a select, .section aside ul li select {
   font-family: "Inter", sans-serif;
@@ -628,6 +631,9 @@ footer #copyright {
 }
 .section aside ul li {
   margin-top: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .section section {
   display: grid;
@@ -703,6 +709,36 @@ footer #copyright {
   }
   .section section .product h5 {
     padding-top: 3px;
+  }
+}
+#filter-title:hover {
+  cursor: pointer;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000;
+}
+
+#main-filter-list {
+  display: none;
+}
+
+#collapse-filter-list {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  #main-filter-list {
+    display: block;
+  }
+  #collapse-filter-list {
+    display: none;
   }
 }
 /* CONTACT CONTENT */

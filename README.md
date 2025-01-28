@@ -30,7 +30,3 @@ Puedes visitar la maqueta de Level Ro aquí: [https://level-ro.netlify.app/](htt
 ## Objetivo
 
 Este proyecto fue desarrollado para demostrar mis habilidades en diseño y maquetación web, aplicando los principios aprendidos durante mi formación como desarrollador web. Aunque no planeo agregar funcionalidad al sitio, considero que es un reflejo sólido de mi capacidad para crear interfaces visualmente atractivas y bien estructuradas.
-
----
-
-¿Tienes alguna sugerencia o comentario? ¡Estoy abierto a escuchar ideas y retroalimentación!
